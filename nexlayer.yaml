@@ -1,0 +1,12 @@
+application:
+  name: theia
+  pods:
+  - name: app
+    image: theiaide/theia:latest
+    path: /
+    servicePorts:
+    - 3000
+    volumes:
+    - name: theia-project
+      mountPath: /home/project
+      size: 5Gi
