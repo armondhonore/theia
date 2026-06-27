@@ -2,11 +2,7 @@ application:
   name: theia
   pods:
   - name: app
-    image: theiaide/theia:latest
+    image: mirror.gcr.io/gitpod/openvscode-server:1.105.1
     path: /
     servicePorts:
     - 3000
-    volumes:
-    - name: theia-project
-      mountPath: /home/project
-      size: 5Gi
